@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 46px 70px;
 }
 .logoBox {
 }
 .logoIcon {
   width: 66px;
   height: 77px;
-  padding: 46px 70px;
 }
 
 .menuBox {

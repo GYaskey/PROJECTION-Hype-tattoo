@@ -1,0 +1,99 @@
+.heroSection {
+  padding: 64px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.smallHeading {
+  display: flex;
+  height: 42px;
+
+  justify-content: left;
+  align-items: center;
+}
+
+.smallHeadingIconLeft {
+  width: 109px;
+}
+.smallHeadingIconLeft use {
+  height: 42px;
+}
+.smallHeadingIconRight {
+  width: 109px;
+  fill: #000;
+  stroke-width: 0.78px;
+  stroke: #000;
+}
+.smallHeadingIconRight use {
+  height: 42px;
+}
+
+.smallHeadingText {
+  font-family: 'Mona Sans';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #000;
+  width: 252px;
+}
+
+.midHeadingText {
+  font-family: 'Druk Cyr', sans-serif;
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 0.99;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.largeHeadingText {
+  font-family: 'Druk Cyr', sans-serif;
+  font-weight: 700;
+  font-size: 222px;
+  line-height: 0.99;
+  text-transform: uppercase;
+  color: #000;
+  max-width: 933px;
+}
+
+.signupButton {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  border: none;
+  background: transparent;
+}
+
+.signupButtonText {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #000;
+  padding: 41px 61px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.signupButtonIconWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 104px;
+  width: 104px;
+  background-color: #00d0d2;
+  border: 1px solid #00d0d2;
+}
+
+.signupButtonIcon {
+  width: 19px;
+  height: 18px;
+  stroke-width: 4.12px;
+  stroke: #000;
+}
