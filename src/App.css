@@ -1,5 +1,5 @@
 .heroAudienceWrapper {
-  background: url('../public/image/HeroAudBackgroundOptimized.webp') no-repeat
+  background: url('../src/image/HeroAudBackgroundOptimized.webp') no-repeat
     center top;
   background-size: cover;
 }

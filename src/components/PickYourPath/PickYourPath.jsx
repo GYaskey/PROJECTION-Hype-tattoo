@@ -1,10 +1,5 @@
 const PickYourPath = () => {
-  return (
-    <div>
-      PickYourPath
-      <img src="../../image/icons.svg" alt="" />
-    </div>
-  );
+  return <div>PickYourPath</div>;
 };
 
 export default PickYourPath;
