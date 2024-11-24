@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logoBox {
+}
+.logoIcon {
+  width: 66px;
+  height: 77px;
+  padding: 46px 70px;
+}
+
+.menuBox {
+}
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.menuText {
+  font-family: 'Druk Cyr';
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 0.915;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #000;
+}
+.menuIcon {
+  width: 42px;
+  height: 42px;
+  fill: #00d0d2;
+}
