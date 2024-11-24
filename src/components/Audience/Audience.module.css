@@ -1,0 +1,215 @@
+.audienceSection {
+  padding: 64px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, #000 100%);
+}
+
+.audienceSectionTitle {
+  font-family: 'Druk Cyr', sans-serif;
+  font-weight: 700;
+  font-size: 133px;
+  line-height: 0.99;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.cardsWrapperTop {
+  display: flex;
+  flex-shrink: 1;
+}
+
+.cardsWrapperMid {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardsWrapperLow {
+  display: flex;
+}
+
+.counter {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.99;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.counterAccent {
+  color: rgba(255, 255, 255, 0.33);
+  transition: color 0.3s ease;
+}
+
+.counter:hover {
+  color: #000;
+}
+
+.counter:hover .counterAccent {
+  color: rgba(0, 0, 0, 0.33);
+}
+
+.counterIconWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-family: 'Druk Cyr', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 0.99;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.cardText {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.44;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.newbiesCard {
+  border: 3px solid #fff;
+  border-radius: 22px;
+  width: 447px;
+  padding: 27px 35px 32px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0.2;
+  transition: all 0.3s ease, color 0.3s ease, fill 0.3s ease;
+}
+
+.newbiesCard:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.newbieCounter {
+  margin-bottom: 60px;
+}
+
+.newbieTitle {
+  margin-bottom: 10px;
+}
+
+.newbieText {
+  margin-bottom: 28px;
+  width: 291px;
+}
+
+.newbiesCardIcon {
+  width: 210px;
+  height: 210px;
+  fill: #fff;
+}
+
+.smallCard {
+  border: 3px solid #fff;
+  border-radius: 22px;
+  padding: 27px 35px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.3s ease, color 0.3s ease, fill 0.3s ease;
+}
+
+.smallCard:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.youngProfessionalsCardIcon {
+  width: 63px;
+  height: 63px;
+  fill: #fff;
+}
+
+.advancedLearnersCardIcon {
+  width: 63px;
+  height: 63px;
+  fill: #fff;
+}
+
+.tattooVeteransCardIcon {
+  width: 61px;
+  height: 63px;
+  fill: #fff;
+}
+
+.ageWarningCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 51px;
+  border: 3px solid #fff;
+  border-radius: 22px;
+  flex-shrink: 1;
+  height: 248px;
+  transition: all 0.3s ease, color 0.3s ease, fill 0.3s ease;
+}
+
+.ageWarningCard:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.ageWarningText {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.44;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #fff;
+  width: 235px;
+}
+
+.ageWarningIconsGroup {
+  display: flex;
+  gap: 18px;
+}
+
+.ageIcons {
+  fill: #fff;
+}
+
+/* Hover styles for icons inside the ageWarningCard */
+.ageWarningCard:hover .ageIcons {
+  fill: #000;
+}
+
+.newbiesCard:hover .cardTitle,
+.newbiesCard:hover .cardText,
+.smallCard:hover .cardTitle,
+.smallCard:hover .cardText,
+.ageWarningCard:hover .ageWarningText {
+  color: #000;
+}
+
+.newbiesCard:hover .counter,
+.smallCard:hover .counter,
+.ageWarningCard:hover .counter {
+  color: #000;
+}
+
+.newbiesCard:hover .counterAccent,
+.smallCard:hover .counterAccent,
+.ageWarningCard:hover .counterAccent {
+  color: rgba(0, 0, 0, 0.33);
+}
+
+.newbiesCard:hover .newbiesCardIcon,
+.smallCard:hover .youngProfessionalsCardIcon,
+.smallCard:hover .advancedLearnersCardIcon,
+.smallCard:hover .tattooVeteransCardIcon {
+  fill: #000;
+}
