@@ -182,7 +182,6 @@
   fill: #fff;
 }
 
-/* Hover styles for icons inside the ageWarningCard */
 .ageWarningCard:hover .ageIcons {
   fill: #000;
 }

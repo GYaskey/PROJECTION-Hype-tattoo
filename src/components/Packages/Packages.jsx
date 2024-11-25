@@ -11,16 +11,22 @@ const Packages = () => {
           title="Quantum"
           packageType="quantum"
           features={featuresArray}
+          price={2990}
+          oldPrice={3990}
         />
         <LevelColumn
           title="Hyper"
           packageType="hyper"
           features={featuresArray}
+          price={3990}
+          oldPrice={5990}
         />
         <LevelColumn
           title="Blast"
           packageType="blast"
           features={featuresArray}
+          price={6990}
+          oldPrice={8990}
         />
       </div>
     </div>

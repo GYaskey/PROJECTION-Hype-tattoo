@@ -67,6 +67,12 @@
   gap: 4px;
   border: none;
   background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.signupButton:hover {
+  transform: scale(1.05);
 }
 
 .signupButtonText {

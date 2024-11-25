@@ -5,7 +5,7 @@ import Feature from '../Feature/Feature';
 
 import s from './LevelColumn.module.css';
 
-const LevelColumn = ({ title, packageType, features }) => {
+const LevelColumn = ({ title, packageType, features, price, oldPrice }) => {
   return (
     <div
       className={clsx(s.levelColumn, s[`${packageType.toLowerCase()}Column`])}
@@ -25,6 +25,24 @@ const LevelColumn = ({ title, packageType, features }) => {
             isAvailable={feature[packageType]}
           />
         ))}
+      </div>
+      <div className={s.prices}>
+        <span className={s.newPrice}>{price}$</span>
+        <span className={s.oldPrice}>{oldPrice}$</span>
+      </div>
+      <div className={s.columnButtons}>
+        <button type="button" className={s.columnButton}>
+          <p className={s.columnButtonText}>Choose and proceed</p>
+          <div className={s.columnButtonIconWrap}>
+            <Icon name="icon-arrow-top-r" className={s.columnButtonIcon} />
+          </div>
+        </button>
+        <button type="button" className={s.columnButton}>
+          <p className={s.columnButtonText}>Consultation</p>
+          <div className={s.columnButtonIconWrap}>
+            <Icon name="icon-arrow-top-r" className={s.columnButtonIcon} />
+          </div>
+        </button>
       </div>
     </div>
   );
