@@ -19,3 +19,20 @@
   justify-content: center;
   gap: 53px;
 }
+
+@media (max-width: 767px) {
+  .packagesSection {
+    padding: 73px 20px;
+  }
+  .packagesSectionTitle {
+    font-size: 62px;
+    margin-bottom: 62px;
+  }
+  .columnsContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+  }
+}
