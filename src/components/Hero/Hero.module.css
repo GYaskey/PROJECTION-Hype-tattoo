@@ -5,6 +5,16 @@
   gap: 52px;
 }
 
+@media (max-width: 767px) {
+  .heroSection {
+    margin-top: 62px;
+    padding: 51px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
 .smallHeading {
   display: flex;
   height: 42px;
@@ -40,6 +50,32 @@
   width: 252px;
 }
 
+@media (max-width: 767px) {
+  .smallHeading {
+    height: 20px;
+    margin-bottom: 51px;
+  }
+  .smallHeadingIconLeft {
+    width: 53px;
+  }
+  .smallHeadingIconLeft use {
+    height: 20px;
+  }
+  .smallHeadingIconRight {
+    width: 53px;
+    fill: #000;
+    stroke-width: 0.78px;
+    stroke: #000;
+  }
+  .smallHeadingIconRight use {
+    height: 20px;
+  }
+  .smallHeadingText {
+    font-size: 10px;
+    width: 115px;
+  }
+}
+
 .midHeadingText {
   font-family: 'Druk Cyr', sans-serif;
   font-weight: 700;
@@ -50,6 +86,13 @@
   color: #000;
 }
 
+@media (max-width: 767px) {
+  .midHeadingText {
+    font-size: 62px;
+    width: 203px;
+  }
+}
+
 .largeHeadingText {
   font-family: 'Druk Cyr', sans-serif;
   font-weight: 700;
@@ -58,6 +101,15 @@
   text-transform: uppercase;
   color: #000;
   max-width: 933px;
+}
+
+@media (max-width: 767px) {
+  .largeHeadingText {
+    font-size: 62px;
+    letter-spacing: -0.02em;
+    max-width: 260px;
+    margin-bottom: 51px;
+  }
 }
 
 .signupButton {
@@ -95,6 +147,22 @@
   width: 104px;
   background-color: #00d0d2;
   border: 1px solid #00d0d2;
+}
+
+@media (max-width: 767px) {
+  .signupButton {
+    gap: 2px;
+  }
+
+  .signupButtonText {
+    font-size: 14px;
+    padding: 26px;
+  }
+
+  .signupButtonIconWrap {
+    width: 67px;
+    height: 67px;
+  }
 }
 
 .signupButtonIcon {

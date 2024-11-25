@@ -9,8 +9,10 @@
   .header {
     background-color: #000;
     position: fixed;
+    top: 0;
     padding: 31px 0px;
     width: 100%;
+    z-index: 15;
   }
 }
 

@@ -3,6 +3,12 @@
     center top;
   background-size: cover;
 }
+@media (max-width: 767px) {
+  .heroAudienceWrapper {
+    background: url('../src/image/mob-background.webp') no-repeat center top;
+    background-size: cover;
+  }
+}
 
 .hero,
 .audience {
