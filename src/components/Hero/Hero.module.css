@@ -163,10 +163,10 @@
 @media (min-width: 768px) and (max-width: 1439px) {
   .heroSection {
     margin-top: unset;
-    padding: 35px 70px;
+    padding: 40px 70px;
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 40px;
   }
   .smallHeading {
     height: 20px;
@@ -214,5 +214,61 @@
   .signupButtonIconWrap {
     width: 67px;
     height: 67px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1979px) {
+  .heroSection {
+    margin-top: unset;
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .smallHeading {
+    height: 30px;
+    margin-bottom: 21px;
+  }
+  .smallHeadingIconLeft {
+    width: 93px;
+  }
+  .smallHeadingIconLeft use {
+    height: 50px;
+  }
+  .smallHeadingIconRight {
+    width: 93px;
+    fill: #000;
+    stroke-width: 1px;
+    stroke: #000;
+  }
+  .smallHeadingIconRight use {
+    height: 50px;
+  }
+  .smallHeadingText {
+    font-size: 20px;
+    width: 250px;
+  }
+  .midHeadingText {
+    font-size: 82px;
+    max-width: 450px;
+  }
+  .largeHeadingText {
+    font-size: 112px;
+    letter-spacing: -0.02em;
+    max-width: 450px;
+    margin-bottom: 51px;
+  }
+  .signupButton {
+    gap: 4px;
+  }
+
+  .signupButtonText {
+    font-size: 20px;
+    padding: 26px;
+  }
+
+  .signupButtonIconWrap {
+    width: 72px;
+    height: 72px;
   }
 }

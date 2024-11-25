@@ -2,30 +2,24 @@
   border: 1px solid rgba(0, 0, 0, 0.22);
   padding: 55px;
 }
-
 .quantumColumn {
 }
-
 .hyperColumn {
   background: #00d0d2;
 }
-
 .blastColumn {
   background: #000;
   color: #fff;
 }
-
 .blastColumn svg {
   fill: #fff;
 }
-
 .titleIconWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 61px;
 }
-
 .columnTitle {
   font-family: 'Mona Sans', sans-serif;
   font-weight: 700;
@@ -35,30 +29,24 @@
 
   text-transform: uppercase;
 }
-
 .columnIcon {
   width: 84px;
   height: 84px;
 }
-
 .quantumIcon {
   fill: #00d0d2;
 }
-
 .hyperIcon {
   fill: #000;
 }
-
 .blastIcon {
   fill: #fff;
 }
-
 .featureList {
   display: flex;
   flex-direction: column;
   gap: 44px;
 }
-
 .prices {
   display: flex;
   justify-content: center;
@@ -66,7 +54,6 @@
   flex-direction: column;
   margin: 50px;
 }
-
 .newPrice {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -74,7 +61,6 @@
   line-height: 1.3;
   letter-spacing: -0.02em;
 }
-
 .oldPrice {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -84,7 +70,58 @@
   text-decoration: line-through;
   opacity: 0.33;
 }
-
+.columnButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+.columnButton {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  min-width: 500px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.columnButton:hover {
+  transform: scale(1.05);
+}
+.blastColumn .columnButtonText {
+  background: #fff;
+}
+.columnButtonText {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  padding: 41px 31px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  min-width: 70%;
+}
+.columnButtonIconWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 121px;
+  height: 108px;
+  background-color: #00d0d2;
+  border: 1px solid #00d0d2;
+}
+.hyperColumn .columnButtonIconWrap {
+  background-color: #000;
+}
+.columnButtonIcon {
+  width: 21px;
+  height: 21px;
+  stroke-width: 4.12px;
+  stroke: #fff;
+}
 @media (max-width: 767px) {
   .levelColumn {
     padding: 35px 30px;
@@ -108,32 +145,9 @@
   .newPrice {
     font-size: 44px;
   }
-
   .oldPrice {
     font-size: 22px;
   }
-}
-
-.columnButtons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 22px;
-}
-
-.columnButton {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  gap: 8px;
-  border: none;
-  background: transparent;
-  min-width: 500px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-@media (max-width: 767px) {
   .columnButtons {
     gap: 13px;
   }
@@ -141,50 +155,6 @@
     gap: 5px;
     min-width: 300px;
   }
-}
-
-.columnButton:hover {
-  transform: scale(1.05);
-}
-
-.blastColumn .columnButtonText {
-  background: #fff;
-}
-
-.columnButtonText {
-  font-family: 'Mona Sans', sans-serif;
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 1;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  padding: 41px 31px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  min-width: 70%;
-}
-
-.columnButtonIconWrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 121px;
-  height: 108px;
-  background-color: #00d0d2;
-  border: 1px solid #00d0d2;
-}
-
-.hyperColumn .columnButtonIconWrap {
-  background-color: #000;
-}
-
-.columnButtonIcon {
-  width: 21px;
-  height: 21px;
-  stroke-width: 4.12px;
-  stroke: #fff;
-}
-
-@media (max-width: 767px) {
   .columnButtons {
     gap: 13px;
   }
@@ -209,5 +179,20 @@
     width: 13px;
     height: 13px;
     stroke-width: 2.48px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .columnButtonText {
+    font-size: 17px;
+    padding: 28px;
+    min-width: 58%;
+  }
+  .columnButtonIconWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 73px;
   }
 }

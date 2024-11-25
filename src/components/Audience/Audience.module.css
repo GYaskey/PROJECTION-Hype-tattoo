@@ -16,15 +16,6 @@
   color: #000;
 }
 
-@media (max-width: 767px) {
-  .audienceSectionTitle {
-    display: none;
-  }
-  .audienceSection {
-    padding: 50px 20px;
-  }
-}
-
 .cardsWrapperTop {
   display: flex;
   flex-shrink: 1;
@@ -89,39 +80,6 @@
   color: #fff;
 }
 
-@media (max-width: 767px) {
-  .cardTitle {
-    color: #000;
-  }
-
-  .cardText {
-    color: #000;
-  }
-
-  .cardsWrapperTop {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .cardsWrapperMid {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .cardsWrapperLow {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .counter {
-    color: #000;
-  }
-
-  .counterAccent {
-    color: rgba(0, 0, 0, 0.33);
-  }
-}
-
 .newbiesCard {
   border: 3px solid #fff;
   border-radius: 22px;
@@ -161,44 +119,6 @@
   fill: #fff;
 }
 
-@media (max-width: 767px) {
-  .newbiesCard {
-    width: auto;
-    border: none;
-    background-color: #00d0d2;
-    padding: 27px;
-    color: #000;
-  }
-
-  .newbiesCard:hover {
-    background-color: #00d0d2;
-  }
-  .newbiesCardIcon {
-    display: none;
-  }
-  .newbiesCardIconMobile {
-    width: 44px;
-    height: 44px;
-    fill: #000;
-    display: block;
-    stroke-width: 32px;
-  }
-  .counterIconMobileWrap {
-    display: flex;
-    justify-content: space-between;
-  }
-  .newbieTitle {
-    color: #000;
-    margin-bottom: 32px;
-  }
-  .newbieText {
-    max-width: 500px;
-    width: auto;
-    color: #000;
-    margin-bottom: 0;
-  }
-}
-
 .smallCard {
   border: 3px solid #fff;
   border-radius: 22px;
@@ -230,39 +150,6 @@
   width: 61px;
   height: 63px;
   fill: #fff;
-}
-
-@media (max-width: 767px) {
-  .smallCard {
-    border: none;
-    border-radius: 22px;
-    padding: 27px;
-    transition: all 0.3s ease, color 0.3s ease, fill 0.3s ease;
-    background-color: #fff;
-  }
-
-  .smallCard:hover {
-    background-color: #fff;
-    color: #000;
-  }
-
-  .youngProfessionalsCardIcon {
-    width: 44px;
-    height: 44px;
-    fill: #000;
-  }
-
-  .advancedLearnersCardIcon {
-    width: 44px;
-    height: 53px;
-    fill: #000;
-  }
-
-  .tattooVeteransCardIcon {
-    width: 43px;
-    height: 44px;
-    fill: #000;
-  }
 }
 
 .ageWarningCard {
@@ -334,6 +221,96 @@
 }
 
 @media (max-width: 767px) {
+  .audienceSectionTitle {
+    display: none;
+  }
+  .audienceSection {
+    padding: 50px 20px;
+  }
+  .cardTitle {
+    color: #000;
+  }
+  .cardText {
+    color: #000;
+  }
+  .cardsWrapperTop {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .cardsWrapperMid {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .cardsWrapperLow {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .counter {
+    color: #000;
+  }
+  .counterAccent {
+    color: rgba(0, 0, 0, 0.33);
+  }
+  .newbiesCard {
+    width: auto;
+    border: none;
+    background-color: #00d0d2;
+    padding: 27px;
+    color: #000;
+  }
+  .newbiesCard:hover {
+    background-color: #00d0d2;
+  }
+  .newbiesCardIcon {
+    display: none;
+  }
+  .newbiesCardIconMobile {
+    width: 44px;
+    height: 44px;
+    fill: #000;
+    display: block;
+    stroke-width: 32px;
+  }
+  .counterIconMobileWrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .newbieTitle {
+    color: #000;
+    margin-bottom: 32px;
+  }
+  .newbieText {
+    max-width: 500px;
+    width: auto;
+    color: #000;
+    margin-bottom: 0;
+  }
+  .smallCard {
+    border: none;
+    border-radius: 22px;
+    padding: 27px;
+    transition: all 0.3s ease, color 0.3s ease, fill 0.3s ease;
+    background-color: #fff;
+  }
+  .smallCard:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .youngProfessionalsCardIcon {
+    width: 44px;
+    height: 44px;
+    fill: #000;
+  }
+  .advancedLearnersCardIcon {
+    width: 44px;
+    height: 53px;
+    fill: #000;
+  }
+  .tattooVeteransCardIcon {
+    width: 43px;
+    height: 44px;
+    fill: #000;
+  }
   .ageWarningCard {
     flex-direction: column;
     background-color: #000;
@@ -341,12 +318,10 @@
     min-height: 0;
     gap: 0;
   }
-
   .ageWarningCard:hover {
     background-color: #000;
     color: #fff;
   }
-
   .ageWarningText {
     font-weight: 600;
     font-size: 14px;
@@ -360,8 +335,144 @@
   .ageWarningIconsGroup {
     flex-direction: column;
   }
-
   .ageWarningCard:hover .ageWarningText {
     color: #fff;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .audienceSectionTitle {
+    display: unset;
+    font-size: 90px;
+  }
+  .audienceSection {
+    padding: 50px 70px;
+  }
+  .cardTitle {
+    color: #000;
+  }
+  .cardText {
+    color: #000;
+  }
+  .cardsWrapperTop {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .cardsWrapperMid {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .cardsWrapperLow {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .counter {
+    color: #000;
+  }
+  .counterAccent {
+    color: rgba(0, 0, 0, 0.33);
+  }
+  .newbiesCard {
+    width: auto;
+    border: none;
+    background-color: #00d0d2;
+    padding: 27px;
+    color: #000;
+  }
+  .newbiesCard:hover {
+    background-color: #00d0d2;
+  }
+  .newbiesCardIcon {
+    display: none;
+  }
+  .newbiesCardIconMobile {
+    width: 44px;
+    height: 44px;
+    fill: #000;
+    display: block;
+    stroke-width: 32px;
+  }
+  .counterIconMobileWrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .newbieTitle {
+    color: #000;
+    margin-bottom: 32px;
+  }
+  .newbieText {
+    max-width: 500px;
+    width: auto;
+    color: #000;
+    margin-bottom: 0;
+  }
+  .smallCard {
+    border: none;
+    border-radius: 22px;
+    padding: 27px;
+    transition: all 0.3s ease, color 0.3s ease, fill 0.3s ease;
+    background-color: #fff;
+  }
+  .smallCard:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .youngProfessionalsCardIcon {
+    width: 44px;
+    height: 44px;
+    fill: #000;
+  }
+  .advancedLearnersCardIcon {
+    width: 44px;
+    height: 53px;
+    fill: #000;
+  }
+  .tattooVeteransCardIcon {
+    width: 43px;
+    height: 44px;
+    fill: #000;
+  }
+  .ageWarningCard {
+    flex-direction: column;
+    background-color: #000;
+    border: none;
+    min-height: 0;
+    gap: 0;
+  }
+  .ageWarningCard:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .ageWarningText {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.44;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #fff;
+    min-width: 235px;
+    width: 0;
+  }
+  .ageWarningIconsGroup {
+    flex-direction: row;
+  }
+  .ageWarningCard:hover .ageWarningText {
+    color: #fff;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1979px) {
+  .newbiesCard {
+    width: auto;
+    padding: 27px;
+    color: #000;
+  }
+  .smallCard {
+    border-radius: 22px;
+    padding: 27px;
+  }
+  .ageWarningCard {
+    flex-direction: column;
+    gap: 0;
   }
 }
