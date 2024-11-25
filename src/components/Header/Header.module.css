@@ -78,3 +78,15 @@
     height: 24px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .logoIcon {
+    width: 55px;
+    height: 66px;
+  }
+  .menuButton {
+    gap: 12px;
+    top: 40px;
+    right: 40px;
+  }
+}
