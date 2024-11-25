@@ -1,4 +1,5 @@
 .feature {
+  width: 100%;
 }
 
 .featureIconTitleWrapper {
@@ -26,4 +27,16 @@
 
 .disabledFeature {
   opacity: 0.22;
+}
+
+@media (max-width: 767px) {
+  .featureIconTitleWrapper {
+    gap: 7px;
+  }
+  .featureTitle {
+    font-size: 14px;
+  }
+  .featureContent {
+    font-size: 14px;
+  }
 }
