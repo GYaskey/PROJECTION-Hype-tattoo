@@ -5,7 +5,8 @@
 }
 @media (max-width: 767px) {
   .heroAudienceWrapper {
-    background: url('../src/image/mob-background.webp') no-repeat center top;
+    /* background: url('../src/image/mob-background.webp') no-repeat center top; */
+    background: #f9f9f9 no-repeat center top;
     background-size: cover;
   }
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AgeIcons from '../AgeIcons/AgeIcons';
 import Icon from '../Icon/Icon';
 import s from './Audience.module.css';
@@ -6,16 +6,36 @@ import clsx from 'clsx';
 
 const Audience = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+    const handleChange = e => {
+      setIsMobile(e.matches);
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    setIsMobile(mediaQuery.matches);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    };
+  }, []);
 
   return (
     <div className={s.audienceSection}>
       <h2 className={s.audienceSectionTitle}>Who is this course for?</h2>
       <div className={s.cardsWrapperTop}>
         <div className={s.newbiesCard}>
-          <p className={clsx(s.counter, s.newbieCounter)}>
-            _001/
-            <span className={s.counterAccent}>004</span>
-          </p>
+          <div className={s.counterIconMobileWrap}>
+            <p className={clsx(s.counter, s.newbieCounter)}>
+              _001/
+              <span className={s.counterAccent}>004</span>
+            </p>
+            <Icon name="icon-newbie" className={s.newbiesCardIconMobile} />
+          </div>
           <h3 className={clsx(s.cardTitle, s.newbieTitle)}>Newbies</h3>
           <p className={clsx(s.cardText, s.newbieText)}>
             Never held a tattoo machine? No problem! This course will take you
@@ -84,7 +104,9 @@ const Audience = () => {
           >
             <div className={s.ageWarningIconsGroup}>
               <AgeIcons fillColor={isHovered ? '#000' : '#fff'} />
-              <AgeIcons fillColor={isHovered ? '#000' : '#fff'} />
+              {!isMobile && (
+                <AgeIcons fillColor={isHovered ? '#000' : '#fff'} />
+              )}
             </div>
             <p className={s.ageWarningText}>
               To be able to participate in this course you must be over 18 years
@@ -92,7 +114,9 @@ const Audience = () => {
             </p>
             <div className={s.ageWarningIconsGroup}>
               <AgeIcons fillColor={isHovered ? '#000' : '#fff'} />
-              <AgeIcons fillColor={isHovered ? '#000' : '#fff'} />
+              {!isMobile && (
+                <AgeIcons fillColor={isHovered ? '#000' : '#fff'} />
+              )}
             </div>
           </div>
         </div>
