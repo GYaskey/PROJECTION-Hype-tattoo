@@ -223,7 +223,7 @@
     padding: 40px 70px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
   .smallHeading {
     height: 30px;
@@ -253,10 +253,10 @@
     max-width: 450px;
   }
   .largeHeadingText {
-    font-size: 112px;
+    font-size: 150px;
     letter-spacing: -0.02em;
-    max-width: 450px;
-    margin-bottom: 51px;
+    max-width: 600px;
+    margin-bottom: 20px;
   }
   .signupButton {
     gap: 4px;

@@ -462,6 +462,9 @@
 }
 
 @media (min-width: 1440px) and (max-width: 1979px) {
+  .audienceSectionTitle {
+    font-size: 110px;
+  }
   .newbiesCard {
     width: auto;
     padding: 27px;

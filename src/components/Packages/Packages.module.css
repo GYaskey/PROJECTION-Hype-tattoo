@@ -41,9 +41,17 @@
     padding: 50px 70px;
   }
   .columnsContainer {
-    display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 22px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1979px) {
+  .packagesSection {
+    padding: 100px 70px;
+  }
+  .columnsContainer {
     gap: 22px;
   }
 }
