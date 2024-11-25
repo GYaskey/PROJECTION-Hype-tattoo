@@ -11,7 +11,7 @@ function App() {
     <>
       <div className="heroAudienceWrapper">
         <Header />
-        <Hero />
+        <Hero className="hero" />
         <Audience />
       </div>
       <Packages />
