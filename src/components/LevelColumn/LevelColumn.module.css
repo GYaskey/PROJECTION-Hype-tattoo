@@ -85,6 +85,35 @@
   opacity: 0.33;
 }
 
+@media (max-width: 767px) {
+  .levelColumn {
+    padding: 35px 30px;
+  }
+  .titleIconWrapper {
+    margin-bottom: 38px;
+  }
+  .columnTitle {
+    font-size: 32px;
+  }
+  .columnIcon {
+    width: 51px;
+    height: 51px;
+  }
+  .featureList {
+    gap: 25px;
+  }
+  .prices {
+    margin: 27px;
+  }
+  .newPrice {
+    font-size: 44px;
+  }
+
+  .oldPrice {
+    font-size: 22px;
+  }
+}
+
 .columnButtons {
   display: flex;
   flex-direction: column;
@@ -99,9 +128,19 @@
   gap: 8px;
   border: none;
   background: transparent;
-  width: 500px;
+  min-width: 500px;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .columnButtons {
+    gap: 13px;
+  }
+  .columnButton {
+    gap: 5px;
+    min-width: 300px;
+  }
 }
 
 .columnButton:hover {
@@ -121,7 +160,7 @@
   text-transform: uppercase;
   padding: 41px 31px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  width: 70%;
+  min-width: 70%;
 }
 
 .columnButtonIconWrap {
@@ -143,4 +182,32 @@
   height: 21px;
   stroke-width: 4.12px;
   stroke: #fff;
+}
+
+@media (max-width: 767px) {
+  .columnButtons {
+    gap: 13px;
+  }
+  .columnButton {
+    gap: 5px;
+    min-width: 300px;
+    width: 100%;
+  }
+  .columnButtonText {
+    font-size: 14px;
+    padding: 28px;
+    min-width: 58%;
+  }
+  .columnButtonIconWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 70px;
+  }
+  .columnButtonIcon {
+    width: 13px;
+    height: 13px;
+    stroke-width: 2.48px;
+  }
 }
