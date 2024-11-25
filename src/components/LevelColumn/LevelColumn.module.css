@@ -1,0 +1,60 @@
+.levelColumn {
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  padding: 55px;
+}
+
+.quantumColumn {
+}
+
+.hyperColumn {
+  background: #00d0d2;
+}
+
+.blastColumn {
+  background: #000;
+  color: #fff;
+}
+
+.blastColumn svg {
+  fill: #fff;
+}
+
+.titleIconWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 61px;
+}
+
+.columnTitle {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+
+  text-transform: uppercase;
+}
+
+.columnIcon {
+  width: 84px;
+  height: 84px;
+}
+
+.quantumIcon {
+  fill: #00d0d2;
+}
+
+.hyperIcon {
+  fill: #000;
+}
+
+.blastIcon {
+  fill: #fff;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}

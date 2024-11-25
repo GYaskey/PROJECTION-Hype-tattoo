@@ -1,0 +1,21 @@
+.packagesSection {
+  padding: 220px 70px;
+}
+
+.packagesSectionTitle {
+  font-family: 'Druk Cyr', sans-serif;
+  font-weight: 700;
+  font-size: 133px;
+  line-height: 0.99;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  margin-bottom: 83px;
+}
+
+.columnsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 53px;
+}

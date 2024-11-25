@@ -1,0 +1,29 @@
+.feature {
+}
+
+.featureIconTitleWrapper {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.featureIcon {
+  width: 18px;
+  height: 18px;
+}
+.featureTitle {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+}
+.featureContent {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  opacity: 0.66;
+}
+
+.disabledFeature {
+  opacity: 0.22;
+}
