@@ -378,7 +378,7 @@
   }
 }
 
-@media (min-width: 1440px) and (max-width: 1980px) {
+@media (min-width: 1440px) and (max-width: 1979px) {
   .logo {
     width: 60px;
     height: 70px;
@@ -409,16 +409,22 @@
 
   .wrapper {
     padding: 150px 120px 100px;
-    gap: 100px;
+    gap: 30px;
+  }
+
+  .menuNavigationList {
+    gap: 10px;
+    margin-top: 0;
+    min-width: 450px;
   }
 
   .menuNavigationItem a {
-    font-size: 48px;
+    font-size: 42px;
   }
 
   .menuTitle {
     font-size: 140px;
-    padding: 60px 0;
+    padding: 20px 0;
   }
 
   .joinLink {
@@ -433,7 +439,7 @@
 
   .joinLinkIconWrap {
     width: 100px;
-    height: 90px;
+    height: 102px;
   }
 
   .joinLinkIcon {
