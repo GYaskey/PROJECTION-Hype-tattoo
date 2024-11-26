@@ -8,7 +8,6 @@
 .smallHeading {
   display: flex;
   height: 42px;
-
   justify-content: left;
   align-items: center;
 }

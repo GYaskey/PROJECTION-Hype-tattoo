@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import Icon from '../Icon/Icon'; // ваш компонент Icon
+import Icon from '../Icon/Icon';
 import s from './Menu.module.css';
 
 const Menu = ({ isOpen, toggleMenu }) => {
